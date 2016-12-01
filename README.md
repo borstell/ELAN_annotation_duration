@@ -1,9 +1,9 @@
 # ELAN_annotation_duration
 Tool that counts the total duration of the annotated ELAN annotation files (.eaf) in a folder
 ## Usage
-  1. Save the file `elan_annotation_duration.py` onto your computer.
-  2. If the `.py` file is in the same folder as your `.eaf` files, run the `.py` file by clicking it, or through the command line (NB: Python 2.x or higher is required).
-  3. (optional) If you run the `.py` file through the command line, you have the option of specifying the location of your directory with `.eaf` files manually as an additional argument.
+  1. Save the file `elan_annotation_duration.py` onto your computer (NB: Python 2.x or higher is required).
+  2a. (simple) If the `.py` file is in the same folder as your `.eaf` files, run the `.py` file by clicking it, or through the command line.
+  2b. (advanced) If you run the `.py` file through the command line, you have the option of specifying the location of your directory with `.eaf` files manually as an additional argument (see below).
   
 ## Command-line
 Simple:
