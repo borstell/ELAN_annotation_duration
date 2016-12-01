@@ -1,5 +1,5 @@
 # ELAN_annotation_duration
-Tool that counts the total duration of the annotated ELAN annotation files (.eaf) in a folder
+Tool that counts the total duration of the annotated ELAN annotation files (`.eaf`) in a folder
 ## Usage
   1. Save the file `elan_annotation_duration.py` onto your computer (NB: Python 2.x or higher is required).
   2. 
