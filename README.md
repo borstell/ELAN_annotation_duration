@@ -11,12 +11,14 @@ Tool that counts the total duration span of annotations in ELAN annotation files
 Simple:
 ```
 python3 elan_annotation_duration.py
+
 Total number of files: 105
 Total annotation span (h:m:s.ms): 7:56:13.391
 ```
 With specified folder location:
 ```
 python3 elan_annotation_duration.py /home/my_computer/my_elan_files
+
 Total number of files: 105
 Total annotation span (h:m:s.ms): 7:56:13.391
 ```
