@@ -7,7 +7,7 @@ try:
 except ImportError:
     from xml.etree import ElementTree as et
 
-def get_file_signs(filename):
+def get_file_dur(filename):
     '''Reads through the eaf-files collecting all timestamps and returning the 
     difference between the first and last stamp'''
     tree = et.parse(filename)
@@ -19,7 +19,7 @@ def get_file_signs(filename):
     dur = max(time_stamps)-min(time_stamps)
     return dur
 
-def get_all_signs(directory):
+def get_dir_dur(directory):
     '''Iterates over all eaf-files of a directory and prints the number of files found 
     and the total duration of the annotation span across all files'''
     dur = 0
@@ -28,7 +28,7 @@ def get_all_signs(directory):
         if filename.endswith(".eaf"):
             files += 1
             filename = directory+"/"+filename
-            file_dur = get_file_signs(filename)
+            file_dur = get_file_dur(filename)
             dur += file_dur
     print()
     print("Total number of files:",files)
@@ -42,7 +42,7 @@ def main():
         directory = sys.argv[1]
     else:
         directory = "."
-    get_all_signs(directory) # Change the "." to the directory of your eaf-files (if other)
+    get_dir_dur(directory) # Change the "." to the directory of your eaf-files (if other)
 
 if __name__=='__main__':
     main()
