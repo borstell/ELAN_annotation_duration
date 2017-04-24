@@ -1,5 +1,4 @@
 from __future__ import print_function
-#from xml.etree import ElementTree as et
 from datetime import timedelta
 import os,sys
 try:
